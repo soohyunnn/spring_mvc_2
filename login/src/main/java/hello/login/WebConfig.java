@@ -41,13 +41,13 @@ public class WebConfig implements WebMvcConfigurer {
 //        return filterRegistrationBean;
 //    }
 
-    @Bean
-    public FilterRegistrationBean loginCheckFilter() {
-        FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<>();
-        filterRegistrationBean.setFilter(new LoginCheckFilter());
-        filterRegistrationBean.setOrder(2);
-        filterRegistrationBean.addUrlPatterns("/*");
-        return filterRegistrationBean;
-    }
+//    @Bean
+//    public FilterRegistrationBean loginCheckFilter() {
+//        FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<>();
+//        filterRegistrationBean.setFilter(new LoginCheckFilter());
+//        filterRegistrationBean.setOrder(2);
+//        filterRegistrationBean.addUrlPatterns("/*");
+//        return filterRegistrationBean;
+//    }
 
 }
